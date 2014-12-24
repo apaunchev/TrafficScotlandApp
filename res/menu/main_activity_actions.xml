@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @author Angel Paunchev (S1105400) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/action_filter_road"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/filter_by_road"
+        android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/action_filter_date"
+        android:icon="@drawable/ic_action_event"
+        android:title="@string/filter_by_date"
+        android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/action_update_feed"
+        android:title="@string/update_feed" />
+    
+    <item android:id="@+id/action_reset_filters"
+        android:title="@string/reset_all_filters" />
+        
+    <item android:id="@+id/action_about"
+        android:title="@string/about" />
+</menu>

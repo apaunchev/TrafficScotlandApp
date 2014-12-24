@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @author Angel Paunchev (S1105400) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        
+	    <TextView
+	        android:id="@+id/item_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp" />
+	    
+	    <TextView
+	        android:id="@+id/item_description"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="14sp"
+	        android:textColor="#666" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/item_details"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    
+	    <ProgressBar
+		    android:id="@+id/progressBar"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="12dp"
+		    android:layout_marginRight="6dp"
+			android:layout_gravity="center_vertical"
+			style="?android:attr/progressBarStyleHorizontal" />
+	    
+	   	<View
+		   android:id="@+id/item_indicator"
+		   android:layout_width="12dp"
+		   android:layout_height="12dp"
+		   android:layout_marginLeft="12dp"
+		   android:layout_marginRight="6dp"
+		   android:layout_gravity="center_vertical"
+		   android:background="@drawable/circle" />
+	    
+	    <ImageView
+	        android:id="@+id/item_arrow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:contentDescription="@string/open"
+	        android:src="@drawable/ic_action_next_item" />
+	
+    </LinearLayout>
+    
+</LinearLayout>
